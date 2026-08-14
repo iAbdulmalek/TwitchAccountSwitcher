@@ -33,7 +33,7 @@ One honest caveat: no tool can make rule-breaking safe. If one of your accounts 
 
 ## Security notes
 
-- Saved sessions are Twitch auth tokens. They are stored **unencrypted** in your Chrome profile (`chrome.storage.local`) — the same protection level as the live cookies themselves. Don't use this on a shared or untrusted computer.
+- Saved sessions are Twitch auth tokens. They are stored **unencrypted** in your Chrome profile (`chrome.storage.local`). The same protection level as the live cookies themselves. Don't use this on a shared or untrusted computer.
 - Deleting a saved account in the popup only deletes the local snapshot; the Twitch account is untouched.
 - To revoke a saved session entirely, log in to that account and disconnect other sessions in Twitch **Settings → Security and Privacy**, or just change the password.
 
