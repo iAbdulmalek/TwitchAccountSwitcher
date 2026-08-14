@@ -1,0 +1,268 @@
+:root {
+  --bg: #0e0e10;
+  --panel: #1f1f23;
+  --border: #26262c;
+  --text: #efeff1;
+  --text-dim: #898995;
+  --purple: #9146ff;
+  --purple-hover: #772ce8;
+  --green: #00c98d;
+  --red: #eb4646;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 320px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+}
+
+/* Header */
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.titles h1 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status {
+  color: var(--text-dim);
+  font-size: 11px;
+}
+
+/* Alert: flat text, no box */
+
+.alert {
+  margin: 8px 12px 0;
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+
+.alert.success {
+  color: var(--green);
+}
+
+.alert.error {
+  color: var(--red);
+}
+
+.alert.hidden {
+  display: none;
+}
+
+/* Account list: flat rows */
+
+main {
+  padding: 6px;
+  min-height: 48px;
+}
+
+body.busy main,
+body.busy footer {
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.account-list {
+  list-style: none;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 8px;
+  border-radius: 4px;
+}
+
+.account:hover {
+  background: var(--panel);
+}
+
+.avatar {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.4px;
+}
+
+.account-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.account-name {
+  font-size: 12.5px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.account-meta {
+  color: var(--text-dim);
+  font-size: 10.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.account-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--green);
+  padding: 0 4px;
+}
+
+/* Buttons */
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.btn.primary {
+  background: var(--purple);
+  color: #fff;
+  width: 100%;
+}
+
+.btn.primary:hover:not(:disabled) {
+  background: var(--purple-hover);
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--text-dim);
+  width: 100%;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+.btn.ghost:hover:not(:disabled) {
+  color: var(--text);
+}
+
+.btn.small {
+  padding: 4px 10px;
+  font-size: 11.5px;
+  background: var(--purple);
+  color: #fff;
+}
+
+.btn.small:hover {
+  background: var(--purple-hover);
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: var(--text-dim);
+  font-family: inherit;
+  font-size: 12px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn:hover {
+  color: var(--text);
+  background: var(--panel);
+}
+
+.icon-btn.danger:hover {
+  color: var(--red);
+}
+
+.icon-btn.armed {
+  width: auto;
+  padding: 0 6px;
+  color: var(--red);
+  font-size: 10.5px;
+  font-weight: 600;
+}
+
+/* Empty state */
+
+.empty {
+  color: var(--text-dim);
+  padding: 8px 8px 4px;
+}
+
+.empty.hidden {
+  display: none;
+}
+
+.empty-title {
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+  font-size: 12.5px;
+}
+
+.empty ol {
+  padding-left: 16px;
+  line-height: 1.6;
+  font-size: 11.5px;
+}
+
+/* Footer */
+
+footer {
+  padding: 8px 12px 10px;
+  border-top: 1px solid var(--border);
+}
+
+.privacy {
+  margin-top: 8px;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 10px;
+}

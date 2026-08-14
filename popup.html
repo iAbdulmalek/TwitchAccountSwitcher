@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Twitch Account Switcher</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="app-header">
+    <img class="logo" src="icons/icon48.png" alt="" width="28" height="28">
+    <div class="titles">
+      <h1>Account Switcher</h1>
+      <p id="status" class="status">Checking session&hellip;</p>
+    </div>
+  </header>
+
+  <div id="alert" class="alert hidden" role="alert"></div>
+
+  <main>
+    <ul id="account-list" class="account-list"></ul>
+    <div id="empty-state" class="empty hidden">
+      <p class="empty-title">No saved accounts yet</p>
+      <ol>
+        <li>Log in to an account at <strong>twitch.tv</strong></li>
+        <li>Click <strong>Save current session</strong> below</li>
+        <li>Repeat for each account, then switch with one click</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer>
+    <button id="save-btn" class="btn primary">Save current session</button>
+    <button id="logout-btn" class="btn ghost">Log out on this browser</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
