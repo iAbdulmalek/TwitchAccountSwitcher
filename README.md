@@ -29,10 +29,10 @@ Twitch allows users to have multiple accounts. What gets accounts suspended is *
 
 - **No automation.** It never clicks, follows, chats, watches, or calls any Twitch API. It only swaps cookies when *you* click Switch.
 - **No network activity.** Zero requests to Twitch or anywhere else. Your tokens are never transmitted.
-- **Stable device identity.** Device-level cookies (`unique_id`, `unique_id_durable`) are shared across accounts and never swapped — the same as when you log out and back in manually. Your browser doesn't look like a new device on every switch, which is the kind of churn anti-abuse systems flag.
+- **Stable device identity.** Device-level cookies (`unique_id`, `unique_id_durable`) are shared across accounts and never swapped, same as when you log out and back in manually. Your browser doesn't look like a new device on every switch, which is the kind of act anti-abuse systems flag.
 - **Minimal permissions.** Only `cookies` + `storage`, scoped to `*.twitch.tv`. It cannot read any other site.
 
-One honest caveat: no tool can make rule-breaking safe. If one of your accounts is suspended, using another to return to the same channels is ban evasion regardless of how you switch — don't do that.
+**no tool can make rule-breaking safe. If one of your accounts is suspended, using another to return to the same channels is ban evasion regardless of how you switch don't do that.**
 
 ## Security notes
 
@@ -50,6 +50,6 @@ One honest caveat: no tool can make rule-breaking safe. If one of your accounts 
 
 - `manifest.json`  Manifest V3, popup-only (no background worker, minimal attack surface)
 - `popup.html` / `popup.css` / `popup.js`  all logic lives in the popup
-- `icons/`  generated toolbar icons
+- `icons/` toolbar icons
 
 License: MIT. Do whatever you like with it.
