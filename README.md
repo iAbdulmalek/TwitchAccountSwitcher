@@ -1,5 +1,5 @@
 # Twitch Account Switcher (Local)
-
+(example.png)
 A minimal Chrome extension that switches between your own Twitch accounts in one click. It works by saving and restoring your `twitch.tv` session cookies. Functionally identical to logging out and logging back in by hand, just faster.
 
 **Everything stays on your machine.** The extension makes zero network requests, contains zero analytics, and stores sessions only in `chrome.storage.local` inside your browser profile.
