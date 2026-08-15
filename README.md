@@ -52,4 +52,4 @@ Twitch allows users to have multiple accounts. What gets accounts suspended is *
 - `popup.html` / `popup.css` / `popup.js`  all logic lives in the popup
 - `icons/` toolbar icons
 
-License: MIT. Do whatever you like with it.
+License: MIT.
