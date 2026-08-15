@@ -8,19 +8,20 @@ A minimal Chrome extension that switches between your own Twitch accounts in one
 
 ## Install
 
-1. Open Chrome and go to `chrome://extensions`.
-2. Turn on **Developer mode** (toggle in the top-right corner).
-3. Click **Load unpacked** and select this folder (`twitch-account-switcher`).
-4. Pin the icon from the puzzle-piece menu so it's always visible.
+1. Clone the repo
+2. Open Chrome and go to `chrome://extensions`.
+3. Turn on **Developer mode** (toggle in the top-right corner).
+4. Click **Load unpacked** and select repo folder.
+5. Pin the icon from the puzzle-piece menu so it's always visible.
 
 ## Use
 
-1. Log in to Twitch normally at [twitch.tv](https://www.twitch.tv).
+1. Log in to Twitch normally.
 2. Click the extension icon → **Save current session**.
 3. Log out on Twitch (or use the extension's **Log out on this browser** button), log in to your next account, and save that one too.
 4. From then on, click any saved account → **Switch**. Open Twitch tabs reload automatically as the new account.
 
-Before every switch, the extension silently re-saves the account you're leaving, so its session stays fresh.
+**Before every switch, the extension silently re-saves the account you're leaving, so its session stays fresh.**
 
 ## Why this won't get you banned
 
